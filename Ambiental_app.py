@@ -1,7 +1,7 @@
-importar  streamlit  como  st
-importar  pandas  como  pd
-importar  numpy  como  np
+import streamlit as st
+import pandas as pd
+import numpy as np
 
-n  =  st . control deslizante ( "n" , 5 , 100 , paso = 1 )
-chart_data  =  pd . DataFrame ( np . aleatorio . randn ( n ), columnas = [ 'datos' ])
-st . line_chart ( chart_data )
+n=st.slider("n", 5,100, step= 1)
+chart_data=pd.DataFrame(np.random.randn(n), columns=['data'])
+st.line_chart(chart_data)
