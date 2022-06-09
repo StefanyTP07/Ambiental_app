@@ -5,7 +5,7 @@ import numpy as np
 print('Beginning file download with urllib2...')
 @st.experimental_memo
 def download_data():
-  url = 'https://www.datosabiertos.gob.pe/sites/default/files/Monitoreo_setiembre_Ov.Miraflores.xlsx'
+  url = 'https://files.minsa.gob.pe/s/eRqxR35ZCxrzNgr/download'
   filename = 'data.csv'
   urllib.request.urlretrieve(url, 'data.csv')
   return filename
