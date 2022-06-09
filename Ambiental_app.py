@@ -10,6 +10,7 @@ def download_data():
   filename = 'data.csv'
   urllib.request.urlretrieve(url, 'data.csv')
   return filename
+
 st.write(download_data())
 
 n=st.slider("n", 5,100, step= 1)
