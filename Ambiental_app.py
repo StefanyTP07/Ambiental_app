@@ -18,4 +18,4 @@ n=st.slider("n", 5,10, step= 1)
 chart_data=pd.DataFrame(np.random.randn(n), columns=['data'])
 st.line_chart(chart_data)
 pd.read_excel(download_data())
-##st.dataframe(data.head(20))
+
