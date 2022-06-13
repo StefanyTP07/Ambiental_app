@@ -6,9 +6,9 @@ import urllib.request
 print('Beginning file download with urllib2...')
 @st.experimental_memo
 def download_data():
-  url = 'https://files.minsa.gob.pe/s/eRqxR35ZCxrzNgr/download'
-  filename = 'data.csv'
-  urllib.request.urlretrieve(url, 'data.csv')
+  url = 'https://www.datosabiertos.gob.pe/sites/default/files/Monitoreo_setiembre_Ov.Miraflores.xlsx'
+  filename = 'data.xlsx'
+  urllib.request.urlretrieve(url, 'data.xlsx')
   return filename
 
 st.write(download_data())
